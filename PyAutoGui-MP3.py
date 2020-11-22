@@ -1,3 +1,4 @@
+ #
 import webbrowser
 import time
 import pyautogui
@@ -5,11 +6,9 @@ import sys
 condition = True
 webbrowser.open("https://www.mp3juices.cc/")
 time.sleep(3)
-while condition:
     search =pyautogui.prompt("What to search?:")
     if search == None:
         sys.exit()
-        condition = False
     else:
         pyautogui.click(671, 376)
         pyautogui.typewrite(search)
